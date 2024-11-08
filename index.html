@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia Sẻ Tài Liệu Học Tập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding: 20px; 
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px; 
+            max-width: 800px;
+            width: 100%; 
+        }
+
+        .subject {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #2196F3;
+            border-radius: 5px;
+            padding: 10px 20px; 
+            cursor: pointer; 
+            margin-top: 10px; 
+        }
+
+        .button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chia Sẻ Tài Liệu Học Tập</h1>
+    </header>
+    <div class="container">
+        <div class="subject">
+            <h3>JavaScript</h3>
+            <a href="material.html?subject=javascript" class="button">View Materials</a>
+        </div>
+        <div class="subject">
+            <h3>Java</h3>
+            <a href="material.html?subject=java" class="button">View Materials</a>
+        </div>
+        <div class="subject">
+            <h3>Python</h3>
+            <a href="material.html?subject=python" class="button">View Materials</a>
+        </div>
+        <div class="subject">
+            <h3>HTML</h3>
+            <a href="material.html?subject=html" class="button">View Materials</a>
+        </div>
+    </div>
+</body>
+</html>
